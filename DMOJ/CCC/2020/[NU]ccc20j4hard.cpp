@@ -35,6 +35,7 @@ vector<size_t> z_function(const vector<uint8_t>& s) {
 }
 
 int main() {
+    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     vector<uint8_t> t = get_str();
     vector<uint8_t> s = get_str();
 

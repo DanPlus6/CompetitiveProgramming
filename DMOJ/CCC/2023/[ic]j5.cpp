@@ -6,6 +6,7 @@ string W;
 int R,C;
 int N;
 int main() {
+    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     getline(cin,W);
     N = W.length();
     cin >> R >> C;
