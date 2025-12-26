@@ -4,7 +4,7 @@ using namespace std;
 
 
 // orz Bruce
-const int maxLen = 13;//1e7+3;
+const int maxLen = 1e7+3;
 string t,s; int prefix[maxLen], suffix[maxLen], nxt[maxLen];
 void kmp(string &t, string &s, int a[]){
     nxt[0] = -1;
