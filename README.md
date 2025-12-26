@@ -13,7 +13,6 @@ Solved first 7p problem! - Sept 21, 2025
 
 Joined Olympiads School (teacher: [user:bruce]) - Sep 14, 2025
 
------------------------------
 ## The Counter of Shame
 Problem(s) Unfinished: 2 ([The Cosmic Era P3](https://dmoj.ca/problem/seed3), [CCC '02 S3](https://dmoj.ca/problem/ccc02s3))
 
