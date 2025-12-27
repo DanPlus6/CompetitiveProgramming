@@ -29,11 +29,11 @@ Let `numIntegers` be the number of integers that fit the given constraints. Outp
 
 ## Sample Input 1
 
-2
+```2```
 
 ## Sample Output 1
 
-1
+```1```
 
 ## Sample Explanation 1
 
@@ -41,11 +41,11 @@ The only such integer that is less than `10^2` is 67.
 
 ## Sample Input 2
 
-67
+```67```
 
 ## Sample Output 2
 
-43880417
+```43880417```
 
 ## Sample Explanation 2
 
