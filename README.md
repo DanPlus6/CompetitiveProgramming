@@ -18,4 +18,4 @@ Joined Olympiads School (teacher: [bruce](https://dmoj.ca/user/bruce)) - Sep 14,
 
 Problem(s) Unfinished: `4` ([The Cosmic Era P3](https://dmoj.ca/problem/seed3), [CCC '02 S3](https://dmoj.ca/problem/ccc02s3), [Valentines Day '19 J3](https://dmoj.ca/problem/valentines19j3), [Amplitude Hackathon Winter '25 Problem 6](https://dmoj.ca/problem/ampl2025wp6))
 
-Solution(s) not Understood: 0
+Solution(s) not Understood: `0`
