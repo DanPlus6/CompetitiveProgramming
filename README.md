@@ -16,6 +16,6 @@ Joined Olympiads School (teacher: [bruce](https://dmoj.ca/user/bruce)) - Sep 14,
  
 ## Todo
 
-Problem(s) Unfinished: `4` ([CCC '23 J5](https://dmoj.ca/problem/ccc23j5), [CCC '02 S3](https://dmoj.ca/problem/ccc02s3), [Valentines Day '19 J3](https://dmoj.ca/problem/valentines19j3), [Amplitude Hackathon Winter '25 Problem 6](https://dmoj.ca/problem/ampl2025wp6))
+Problem(s) Unfinished: `4` ([CCC '23 J5](https://dmoj.ca/problem/ccc23j5), [CCC '02 S3](https://dmoj.ca/problem/ccc02s3), [Valentines Day '19 J3](https://dmoj.ca/problem/valentines19j3), [Please Help Me](https://dmoj.ca/problem/dimsum3))
 
-Solution(s) not Understood: `0`
+Solution(s) not Understood: `1` ([SAOJ](https://dmoj.ca/problem/saoj))
