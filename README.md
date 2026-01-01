@@ -1,5 +1,5 @@
 ## Stalk me:
-[[My Rating]](https://clist.by/coder/DanPlus6/) [[danplus6 on DMOJ]](https://github.com/D4nPlus6) [[DanPlus6 on Leetcode]](https://leetcode.com/u/DanPlus6/)
+[[My Rating]](https://clist.by/coder/DanPlus6/) [[danplus6 on DMOJ]](https://dmoj.ca/user/D4nPlus6) [[DanPlus6 on Leetcode]](https://leetcode.com/u/DanPlus6/)
 
 
 ## Coding Timeline:
