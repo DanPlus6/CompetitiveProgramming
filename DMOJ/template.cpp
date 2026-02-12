@@ -32,10 +32,10 @@ typedef priority_queue<int, vi, greater<int>> ripq;
 #define pb push_back
 #define FOUNDANS(res) {cout << res << endl; return 0;}
 
-const int MM = 1e5+5;
-const int INF = 0x3F3F3F3F;
-const ll INFL = 0x3F3F3F3F3F3F3F3FLL;
-const int MOD = 1e9 + 7;
+constexpr int MM = 1e5+5;
+constexpr int INF = 0x3F3F3F3F;
+constexpr ll INFL = 0x3F3F3F3F3F3F3F3FLL;
+constexpr int MOD = 1e9 + 7;
 
 
 
