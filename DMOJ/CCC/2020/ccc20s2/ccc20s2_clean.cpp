@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef pair <int, int> pi;
+typedef pair<int, int> pi;
 typedef vector<int> vi;
 typedef vector<pi> vii;
 #define endl '\n'
