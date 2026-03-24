@@ -2,27 +2,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ALL(x) x.begin(), x.end()
-#define endl '\n'
-
 int main() {
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
     int N; cin >> N;
 
-    vector<pair<int,int>> arr(N);
+    vector<pair<int,int>> arr(N); // initialize vector of empty pairs to store input
     for (int i = 0; i < N; i++) {
-        cin >> arr[i].first >> arr[i].second;
+        cin >> arr[i].first >> arr[i].second; // read T,X pairs directly into the intialized empty pairs
     }
 
-    sort(ALL(arr));
+    sort(arr.begin(), arr.end()); // sort pairs in ascending order by time as lowest time is "starting position"
 
-    double res = 0.0;
+    double res = 0.0; // value to keep track of maxspeed
     for (int i = 0; i < N-1; i++) {
-        res = max(abs((double)arr[i].second-arr[i+1].second)/abs((double)arr[i].first-arr[i+1].first), res);
+        // get current speed
+        double speed = abs((double)arr[i].second - arr[i+1].second) / abs((double)arr[i].first - arr[i+1].first);
+        res = max(speed, res); // update max speed value if current speed is greater
     }
 
-    cout << res << endl;
+    cout << res << '\n';
 
     return 0;
 }
