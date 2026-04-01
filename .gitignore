@@ -1,6 +1,12 @@
 .vscode
 .idea
 .clion
+*.swp
+
+template.*
+templates
+
 .supaSecret
+
 *.mp4
 *.mkv
