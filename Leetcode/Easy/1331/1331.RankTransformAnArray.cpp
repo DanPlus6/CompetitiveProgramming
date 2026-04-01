@@ -6,7 +6,6 @@ using namespace std;
 #pragma GCC target("avx,avx2,fma")
 
 typedef vector<int> vi;
-typedef set<int> si;
 #define ALL(x) x.begin(), x.end()
 
 class Solution {
@@ -16,14 +15,14 @@ public:
         
         vi unq(arr);
         sort(ALL(unq));
-        auto duplicates = unique(ALL(unq));
-        int uniqueElems = distance(unq.begin(),duplicates);
-        if (uniqueElems == 1) return vi(size(arr),1);
+        unq.erase(unique(ALL(unq)), unq.end());
+        if (size(unq) == 1) return vi(size(arr),1);
 
         unordered_map<int,int> ranks;
-        for (int i=0; i<uniqueElems; i++) ranks[unq[i]] = i+1;
+        for (int &i: arr) {
+            i = lower_bound(ALL(unq), i) - unq.begin() + 1;
+        }
 
-        for (int i=0; i<size(arr); i++) arr[i] = ranks[arr[i]];
         return arr;
     }
 };
