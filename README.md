@@ -9,7 +9,7 @@ National Contests
 ├─── USACO (USA Computing Olympiad)                              
 ├─── IOI (International Olympiad in Informatics)                              
 └─── ICPC (International Collegiate Programming Contest)  
-Minor Contests
+Minor Contests                               
 ├─── ACSL (American Computer Science League)
 
 ## Description
