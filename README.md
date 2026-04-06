@@ -10,7 +10,7 @@ National Contests
 ├─── IOI (International Olympiad in Informatics)                              
 └─── ICPC (International Collegiate Programming Contest)  
 Minor Contests                               
-├─── ACSL (American Computer Science League)
+├─── ACSL (American Computer Science League)                               
 └─── OPT-RPI (Rensselaer Polytechnic Institute Programming Competition)
 
 ## Description
