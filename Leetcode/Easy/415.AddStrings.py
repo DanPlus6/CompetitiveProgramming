@@ -34,5 +34,3 @@ class Solution:
         
         if carry: res.appendleft(carry)
         return "".join(map(str,res))
-        
-print(Solution.addStrings(None,"999","1234"))
