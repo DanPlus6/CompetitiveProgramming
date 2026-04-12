@@ -1,14 +1,17 @@
+# IDEs
 .vscode
 .idea
 .clion
 CMakeLists.txt
 cmake-build-debug
 
+# temporary files
 *.swp
 
+# files/solutions
 template.*
-
 .supaSecret
 
+# screen recordings (usually for CCC)
 *.mp4
 *.mkv
