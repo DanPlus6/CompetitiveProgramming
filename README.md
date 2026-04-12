@@ -11,7 +11,7 @@ National Contests
 └─── ICPC (International Collegiate Programming Contest)  
 Minor Contests                               
 ├─── ACSL (American Computer Science League)                               
-├─── CALICO (CALICO Informatics Competition)
+├─── CALICO (CALICO Informatics Competition)                               
 └─── OPT-RPI (Rensselaer Polytechnic Institute Programming Competition)
 
 ## Description
