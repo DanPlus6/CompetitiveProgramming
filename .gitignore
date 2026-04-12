@@ -1,6 +1,9 @@
 .vscode
 .idea
 .clion
+CMakeLists.txt
+cmake-build-debug
+
 *.swp
 
 template.*
