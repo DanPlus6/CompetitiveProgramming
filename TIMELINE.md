@@ -6,7 +6,7 @@
 
 ## Coding Timeline (Highlights)
 
-First "minor" online contest, 4th place in [OPT-RPI](https://optrpi.com/site/) 2026. <img width="1902" height="771" alt="image" src="https://github.com/user-attachments/assets/21dce6c8-2b1a-4489-9807-0aea931e9a22" />
+First "minor" online contest, 4th place in [OPT-RPI](https://optrpi.com/site/) 2026. ![OPT-RPI 4th place](https://github.com/user-attachments/assets/21dce6c8-2b1a-4489-9807-0aea931e9a22)
 
 Attended [first Codeforces contest](https://codeforces.com/contest/2208/standings/participant/232999501#p232999501)! - Mar 15, 2026
 
