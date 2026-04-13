@@ -11,6 +11,7 @@ cmake-build-debug
 # files/solutions
 template.*
 .supaSecret
+\[ic\]*
 
 # screen recordings (usually for CCC)
 *.mp4
