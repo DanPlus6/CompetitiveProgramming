@@ -16,3 +16,8 @@ template.*
 # screen recordings (usually for CCC)
 *.mp4
 *.mkv
+
+# scripts to rename files for SEO
+rename_solutions.ps1
+rename_solutions.sh
+
