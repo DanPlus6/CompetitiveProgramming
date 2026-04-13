@@ -1,4 +1,4 @@
-// Bob and Bus Stops - oly20practice82
+// Bob and Bus Stops
 #include <bits/stdc++.h>
 using namespace std;
 
