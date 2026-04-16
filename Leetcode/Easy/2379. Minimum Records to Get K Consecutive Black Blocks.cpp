@@ -1,4 +1,4 @@
-// 2379. Minimum Records to Get K Consecutive Black Blocks.cpp
+// 2379. Minimum Records to Get K Consecutive Black Blocks
 #include <bits/stdc++.h>
 using namespace std;
 
