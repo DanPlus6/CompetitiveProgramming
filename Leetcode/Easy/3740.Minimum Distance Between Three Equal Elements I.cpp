@@ -1,4 +1,4 @@
-// Problem 1: Japan is turning footsteps into electricity!
+// 3740. Minimum Distance Between Three Equal Elements I
 #include <bits/stdc++.h>
 using namespace std;
 char alpha[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
@@ -50,15 +50,23 @@ constexpr ll INFL = 0x3F3F3F3F3F3F3F3FLL;
 constexpr int MOD = 1e9 + 7;
 
 
-/* Orz bruce */
-int main() {
-    ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+class Solution {
+public:
+    static int minimumDistance(vector<int>& nums) {
+        if (nums.size() < 3) return -1;
 
-    int T; cin >> T;
-    LOOP(T) {
-        int L,W,E,R; cin >> L >> W >> E >> R;
-        cout << E/R/(2*L+2*W) << endl;
+        vvi arr(nums.size()+1, vi());
+        PRIMLOOP(nums.size()) {
+            arr[nums[i]].pb(i);
+        }
+        
+        int res = INF;
+        for (vi &a: arr) {
+            sort(ALL(a));
+
+            
+        }
+
+        return (res != INF ? res : -1);
     }
-
-    return 0;
-}
+};
