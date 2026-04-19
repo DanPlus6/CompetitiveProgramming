@@ -1,4 +1,4 @@
-// Problem J5/S2: Beams of Light
+// CCC '26 J5/S2 - Beams of Light.cpp
 #include <bits/stdc++.h>
 using namespace std;
 

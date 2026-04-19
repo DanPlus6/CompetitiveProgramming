@@ -1,4 +1,4 @@
-// Problem J4: Snail Path
+// CCC '26 J4 - Snail Path
 #include <bits/stdc++.h>
 using namespace std;
 

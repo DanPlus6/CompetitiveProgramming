@@ -1,4 +1,4 @@
-// Problem J3: Creative Candy Consumption
+// CCC '26 J2 - Creative Candy Consumption
 #include <bits/stdc++.h>
 using namespace std;
 

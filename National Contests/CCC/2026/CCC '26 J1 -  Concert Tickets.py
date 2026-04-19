@@ -1,7 +1,6 @@
-# Problem J1: Concert Tickets
+# CCC '26 J1 -  Concert Tickets
 from sys import stdin
 input = stdin.readline
-from collections import defaultdict
 
 B = int(input())
 T = int(input()) - int(input())
