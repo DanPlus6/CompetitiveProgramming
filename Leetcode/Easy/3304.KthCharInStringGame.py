@@ -1,0 +1,5 @@
+# 3304. Kth Character in String Game
+class Solution:
+        def kthCharacter(self, k: int) -> str:
+            return chr(ord('a') + (k - 1).bit_count())
+
