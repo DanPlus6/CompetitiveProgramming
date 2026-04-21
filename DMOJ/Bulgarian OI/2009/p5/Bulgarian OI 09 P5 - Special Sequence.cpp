@@ -330,6 +330,6 @@ int main() {
     // };
 
     // int N; scanf("%d", &N);
-    // printf("%s\n", s[N - 1]);
+    // printf("%s\n", s[N - 1].c_str());
     // return 0;
 }
