@@ -16,7 +16,7 @@ typedef tuple<ll,ll,ll> tl;
 typedef pair<ll,pl> pll;
 typedef pair<string, int> psi;
 typedef vector<int> vi;
-typedef set<int> si;
+typedef unordered_set<int> si;
 typedef set<ll> sl;
 typedef queue<int> qi;
 typedef vector<ll> vl;
@@ -41,8 +41,6 @@ typedef priority_queue<int, vi, greater<>> ripq;
 #define CLOOP(s) for (char c: s)
 #define pb push_back
 #define FOUNDANS(res) {cout << res << endl; return 0;}
-#define pq priority_queue
-#define vc vector
 
 constexpr int MM = 1e5+5;
 constexpr int INF = 0x3F3F3F3F;
