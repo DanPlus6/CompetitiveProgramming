@@ -2,33 +2,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool sameDigits(int x, int y) {
-    unordered_map<int,int> xdig, ydig;
-    while (x != 0) {
-        ++xdig[x%10];
-        x/=10;
-    }
-    while (y != 0) {
-        ++ydig[y%10];
-        y/=10;
-    }
-    return xdig == ydig;
-}
+#define endl '\n'
+#define FOUNDANS(res) {cout << res << endl; return 0;}
 
 /* Orz bruce */
 int main() {
-    int X; scanf("%d",&X);
+    string X; cin >> X;
 
-    int x = X;
-    for (int i = 0; i < 1e9; i++) {
-        ++x;
-        if (sameDigits(X,x)) {
-            printf("%d\n",x);
-            return 0;
+    int swapLeft = -1;
+    for (int i = X.size() - 2; i >= 0; i--) {
+        if (X[i] < X[i + 1]) {
+            swapLeft = i;
+            break;
         }
     }
 
-    printf("0\n");
+    if (swapLeft == -1) FOUNDANS(0)
 
+    int swapRight = swapLeft + 1;
+    for (int i = swapLeft + 2; i < (int)X.size(); i++) {
+        if (X[i] > X[swapLeft] && X[i] <= X[swapRight])
+            swapRight = i;
+    }
+
+    swap(X[swapLeft], X[swapRight]);
+
+    sort(X.begin()+swapLeft+1, X.end());
+
+    cout << X << endl;
     return 0;
 }
+
