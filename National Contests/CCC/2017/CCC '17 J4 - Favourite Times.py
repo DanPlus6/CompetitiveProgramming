@@ -1,4 +1,4 @@
-# # CCC '17 J4 - Favourite Times
+# CCC '17 J4 - Favourite Times
 def main() -> int:
     from sys import stdin
     D = int(stdin.readline())
