@@ -3,13 +3,13 @@
 using namespace std;
 
 bool sameDigits(int x, int y) {
-    unordered_set<int> xdig, ydig;
-    while (x) {
-        xdig.insert(x%10);
+    unordered_map<int,int> xdig, ydig;
+    while (x != 0) {
+        ++xdig[x%10];
         x/=10;
     }
-    while (y) {
-        ydig.insert(y%10);
+    while (y != 0) {
+        ++ydig[y%10];
         y/=10;
     }
     return xdig == ydig;
@@ -21,7 +21,7 @@ int main() {
 
     int x = X;
     for (int i = 0; i < 1e9; i++) {
-        x++;
+        ++x;
         if (sameDigits(X,x)) {
             printf("%d\n",x);
             return 0;
