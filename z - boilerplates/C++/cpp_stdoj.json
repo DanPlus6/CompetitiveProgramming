@@ -1,7 +1,7 @@
 {
     "Competitive Programming Boilerplate": {
-        "prefix": "cp",
-        "description": "Gives you many macros you might need to write a competitive programming solution for online judges like DMOJ and Codeforces",
+        "prefix": "stdoj",
+        "description": "Gives you many macros you might need to write a competitive programming solution for standard online judges like DMOJ and Codeforces",
         "body": [
             "// ${1:problem_name}",
             "#include <bits/stdc++.h>",
