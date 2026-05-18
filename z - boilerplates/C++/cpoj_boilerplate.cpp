@@ -35,7 +35,6 @@ constexpr ll INFL = 0x3F3F3F3F3F3F3F3FLL;
 constexpr int MOD = 1e9 + 7;
 
 
-/* Orz bruce */
 int main() {
     ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 

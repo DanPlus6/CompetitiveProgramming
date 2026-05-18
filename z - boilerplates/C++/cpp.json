@@ -1,6 +1,6 @@
 {
     "Competitive Programming Boilerplate": {
-        "prefix": "stdoj",
+        "prefix": "cpoj",
         "description": "Gives you many macros you might need to write a competitive programming solution for standard online judges like DMOJ and Codeforces",
         "body": [
             "// ${1:problem_name}",
@@ -40,7 +40,6 @@
             "constexpr int MOD = 1e9 + 7;",
             "",
             "",
-            "/* Orz bruce */",
             "int main() {",
             "    ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);",
             "",
