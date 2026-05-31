@@ -1,3 +1,5 @@
+# Mispelling - a1
+
 N = int(input())
 for i in range(N):
     idx, text = input().split(maxsplit=1)
