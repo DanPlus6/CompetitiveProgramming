@@ -1,4 +1,4 @@
-// Sum of Primes 2
+// Sum of Primes 2 - alexquiz2
 #include <bits/stdc++.h>
 using namespace std;
 
