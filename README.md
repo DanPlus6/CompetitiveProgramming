@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-Major Online Judges
+Major Online Judges                              
 ├─── Codeforces                               
 ├─── DMOJ                               
 └─── Leetcode                               
