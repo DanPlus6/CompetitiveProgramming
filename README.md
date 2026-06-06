@@ -12,7 +12,7 @@ National Contests
 Minor Contests                               
 ├─── ACSL (American Computer Science League)                               
 ├─── CALICO (CALICO Informatics Competition)                               
-├─── OPT-RPI (Rensselaer Polytechnic Institute Programming Competition)
+├─── OPT-RPI (Rensselaer Polytechnic Institute Programming Competition)                               
 └─── TeamsCode
 
 ## Description
