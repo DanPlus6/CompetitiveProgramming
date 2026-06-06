@@ -1,7 +1,11 @@
 # Competitive Programming
 
-## Contents and Directories
+## Table of Contents
 
+Major Online Judges
+├─── Codeforces                               
+├─── DMOJ                               
+└─── Leetcode                               
 National Contests                              
 ├─── CCC (Canadian Computing Contests)                               
 ├─── CCO (Canadian Computing Olympiad)                              
