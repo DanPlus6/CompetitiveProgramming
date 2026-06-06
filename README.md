@@ -3,21 +3,22 @@
 ## Table of Contents
 
 Major Online Judges                              
-├─── Codeforces                               
-├─── DMOJ                               
-└─── Leetcode                               
+├─── [Codeforces](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/Codeforces)                               
+├─── [DMOJ](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/DMOJ)                               
+└─── [Leetcode](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/Leetcode)                               
 National Contests                              
-├─── CCC (Canadian Computing Contests)                               
-├─── CCO (Canadian Computing Olympiad)                              
-├─── CIW (Canadian Informatics Workshop)                              
-├─── USACO (USA Computing Olympiad)                              
+├─── [CCC](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/National%20Contests/CCC) (Canadian Computing Contests)                               
+├─── [CCO](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/National%20Contests/CCO) (Canadian Computing Olympiad)                              
+├─── [CIW](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/National%20Contests/CIW) (Canadian Informatics Workshop)                              
+├─── [USACO](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/National%20Contests/USACO) (USA Computing Olympiad)                              
 ├─── IOI (International Olympiad in Informatics)                              
-└─── ICPC (International Collegiate Programming Contest)  
+└─── [ICPC](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/National%20Contests/ICPC) (International Collegiate Programming Contest)  
 Minor Contests                               
-├─── ACSL (American Computer Science League)                               
-├─── CALICO (CALICO Informatics Competition)                               
-├─── OPT-RPI (Rensselaer Polytechnic Institute Programming Competition)                               
-└─── TeamsCode
+├─── [ACSL](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/Minor%20Contests/ACSL) (American Computer Science League)                               
+├─── [Advent of Code](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/Minor%20Contests/Advent%20of%20Code)                               
+├─── [CALICO](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/Minor%20Contests/CALICO) (CALICO Informatics Competition)                               
+├─── [OPT-RPI](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/Minor%20Contests/OPT-RPI) (Rensselaer Polytechnic Institute Programming Competition)                               
+└─── [TeamsCode](https://github.com/DanPlus6/CompetitiveProgramming/tree/main/Minor%20Contests/TeamsCode)
 
 ## Description
 
