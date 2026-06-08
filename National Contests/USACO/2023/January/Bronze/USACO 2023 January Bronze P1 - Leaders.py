@@ -4,9 +4,6 @@ N = int(stdin.readline())
 breeds = stdin.readline()
 E = list(map(int,stdin.readline().split()))
 
-# Orz bruce
-# I was lwk two centimeters away from the answer
-# but Dr.Bruce is goated
 gres,hres = 0,0
 if breeds[0] == 'G':
     gfoot = breeds.rfind('G')
