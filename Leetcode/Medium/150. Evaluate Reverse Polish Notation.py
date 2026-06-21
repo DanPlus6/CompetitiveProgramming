@@ -17,8 +17,6 @@ class Solution:
         for token in tokens:
             if isInt(token): stk.append(token)
             else:
-                print(token)
-                print(stk)
                 second = int(stk.pop())
                 first = int(stk.pop())
 
