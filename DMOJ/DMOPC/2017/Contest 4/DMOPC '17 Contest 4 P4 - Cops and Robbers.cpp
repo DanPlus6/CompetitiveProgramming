@@ -2,10 +2,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
 typedef vector<int> vi;
 typedef vector<bool> vb;
-#define ALL(x) x.begin(), x.end()
 #define pb push_back
 
 void print(vi arr, bool isRes=false) {
@@ -16,19 +14,6 @@ void print(vi arr, bool isRes=false) {
     } else {
         for (int i=0;i<arr.size();i++)
             printf("%d%c", arr[i], (((i+1)<arr.size()) ? ' ' : '\n'));
-    }
-}
-void print(vii arr) {
-    printf("[");
-    for (int i=0;i<arr.size();i++)
-        printf("(%d,%d)%s", arr[i].first, arr[i].second, (((i+1)<arr.size()) ? ", " : "]\n"));
-}
-void print(si s) {
-    printf("{");
-    int n = 1;
-    for (int i: s) {
-        printf("%d%s", i, (n<s.size()) ? ", " : "}\n");
-        n++;
     }
 }
 
