@@ -10,13 +10,13 @@ class Solution {
 public:
     static int maximumElementAfterDecrementingAndRearranging(vi &arr) {
         int N = arr.size();
-        sort(ALL(arr)); arr[0] = 1;
+        vi cnt(N+1,0);
+
+        for (int &num: arr) ++cnt[min(num, N)];
 
         int res = 1;
-        for (int i = 1; i < N; ++i) {
-            if (arr[i] >= res + 1)
-                ++res;
-        }
+        for (int num = 2; num <= N; ++num) 
+            res = min(res+cnt[num], num);
 
         return res;
     }
