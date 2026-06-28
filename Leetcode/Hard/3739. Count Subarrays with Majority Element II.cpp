@@ -10,21 +10,21 @@ public:
     ll countMajoritySubarrays(vector<int>& nums, int T) {
         int N = nums.size();
 
-        vi psf(N*2+1, 0); psf[N] = 1;
-        int cnt = N;
-        ll res = 0, ps = 0;
+        vi pfreq(N*2+1, 0); pfreq[N] = 1;
+        int ps = N; ll cres = 0;
+        ll res = 0;
         for (int i = 0; i < N; ++i) {
             if (nums[i] == T) {
-                ps += psf[cnt];
-                ++cnt;
-                ++psf[cnt];
+                cres += pfreq[ps];
+                ++ps;
+                ++pfreq[ps];
             } else {
-                --cnt;
-                ps -= psf[cnt];
-                ++psf[cnt];
+                --ps;
+                cres -= pfreq[ps];
+                ++pfreq[ps];
             }
 
-            res += ps;
+            res += cres;
         }
         
         return res;
