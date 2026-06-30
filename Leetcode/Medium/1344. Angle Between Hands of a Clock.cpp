@@ -1,4 +1,4 @@
-// 1344. Angel Between Hands of a Clock
+// 1344. Angle Between Hands of a Clock
 #include <bits/stdc++.h>
 using namespace std;
 
