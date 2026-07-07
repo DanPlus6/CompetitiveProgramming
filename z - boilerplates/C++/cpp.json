@@ -113,5 +113,39 @@
             "$0",
             ""
         ]
+    },
+    "Vector Printing Functions": {
+        "prefix": "vcpr",
+        "description": "Gives you a few pre-written functions for printing out different types of vectors in python style for debugging purposes",
+        "body": [
+            "void print(vi arr, bool isRes=false) {",
+            "    if (!isRes) {",
+            "        printf(\"[\");",
+            "        for (int i=0;i<arr.size();i++)",
+            "            printf(\"%d%s\", arr[i], (((i+1)<arr.size()) ? \", \" : \"]\\n\"));",
+            "    } else {",
+            "        for (int i=0;i<arr.size();i++)",
+            "            printf(\"%d%c\", arr[i], (((i+1)<arr.size()) ? ' ' : '\\n'));",
+            "    }",
+            "}",
+            "void print(vii arr) {",
+            "    printf(\"[\");",
+            "    for (int i=0;i<arr.size();i++)",
+            "        printf(\"(%d,%d)%s\", arr[i].first, arr[i].second, (((i+1)<arr.size()) ? \", \" : \"]\\n\"));",
+            "}",
+            "void print(si s) {",
+            "    printf(\"{\");",
+            "    int n = 1;",
+            "    for (int i: s) {",
+            "        printf(\"%d%s\", i, (n<s.size()) ? \", \" : \"}\\n\");",
+            "        n++;",
+            "    }",
+            "}",
+            "void print(vb arr) {",
+            "    printf(\"[\");",
+            "    for (int i=0;i<arr.size();i++)",
+            "        printf(\"%c%s\", ((arr[i]) ? 'T' : 'F'), (((i+1)<arr.size()) ? \", \" : \"]\\n\"));",
+            "}"
+        ]
     }
 }
