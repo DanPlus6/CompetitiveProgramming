@@ -38,10 +38,12 @@ public:
         int N = grid.size();
         vvi dist(N, vi(N, INT_MAX)); {
             queue<ti> q;
-            for (int i=0;i<N;++i) 
-                for (int j=0;j<N;++j) {
-                    if (grid[i][j]) q.push({i,j,0});
-            }
+            for (int r=0;r<N;++r)
+                for (int c=0;c<N;++c)
+                    if (grid[r][c]) {
+                        dist[r][c] = 0;
+                        q.push({r,c,0});
+                    }
 
             while (!q.empty()) {
                 auto [x,y,d] = q.front(); q.pop();
@@ -67,7 +69,7 @@ public:
 
             if (vis[x][y]) continue;
             vis[x][y] = true;
-            
+
             if (x == N-1 && y == N-1) { res = max(d,res); continue; }
             for (int nx,ny, i=0;i<4;++i) {
                 nx = x+dc[i];
