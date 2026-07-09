@@ -5,81 +5,61 @@ using namespace std;
 typedef long long ll;
 typedef pair<int, int> pi;
 typedef tuple<int ,int, int> ti;
-typedef pair<pi, int> pii;
-typedef pair<ll, int> pli;
-typedef pair<ll, ll> pl;
-typedef tuple<ll,ll,ll> tl;
-typedef pair<ll,pl> pll;
 typedef vector<int> vi;
-typedef unordered_set<int> si;
-typedef set<ll> sl;
-typedef queue<int> qi;
-typedef vector<ll> vl;
-typedef vector<string> vs;
 typedef vector<vi> vvi;
-typedef vector<pi> vii;
-typedef vector<ti> vti;
-typedef vector<pl> vll;
-typedef vector<tl> vtl;
-typedef vector<bool> vb;
-#define FILL(a, b) memset(a, b, sizeof(a))
-#define ALL(x) x.begin(), x.end()
-#define LOOP(n) for (int _ = 0; _ < n; _++)
-#define pb push_back
 
 int dr[4] = {-1, 0, 1, 0};
 int dc[4] = {0, 1, 0, -1};
 
 class Solution {
 public:
-    int maximumSafenessFactor(vvi &grid) {
-        if (grid[0][0] || grid.back().back()) return 0;
+    int maximumSafenessFactor(vvi &A) {
+        if (A[0][0] || A.back().back()) return 0;
 
-        int N = grid.size();
-        vvi dist(N, vi(N, INT_MAX)); {
-            queue<ti> q;
-            for (int r=0;r<N;++r)
-                for (int c=0;c<N;++c)
-                    if (grid[r][c]) {
-                        dist[r][c] = 0;
-                        q.push({r,c,0});
-                    }
+        int N = A.size();
+        queue<pi> q;
+        for (int r=0;r<N;++r) {
+            for (int c=0;c<N;++c) {
+                if (A[r][c]) {
+                    q.push({r,c});
+                }
+            }
+        }
+        
+        while (!q.empty()) {
+            auto [r,c] = q.front(); q.pop();
+            int dist = A[r][c];
 
-            while (!q.empty()) {
-                auto [x,y,d] = q.front(); q.pop();
+            for (int nr,nc, d=0;d<4;++d) {
+                nr = r+dr[d];
+                nc = c+dc[d];
 
-                for (int nx,ny, i=0;i<4;++i) {
-                    nx = x+dc[i];
-                    ny = y+dr[i];
-
-                    if (min(nx,ny) >= 0 && max(nx,ny) < N)
-                        if (dist[nx][ny] == INT_MAX) {
-                            dist[nx][ny] = d+1;
-                            q.push({nx,ny,d+1});
-                        }
+                if (min(nr,nc) >= 0 && max(nr,nc) < N && !A[nr][nc]) {
+                    A[nr][nc] = dist+1;
+                    q.push({nr,nc});
                 }
             }
         }
 
-        vector<vb> vis(N, vb(N,false));
-        priority_queue<ti> q; q.push({dist[0][0],0,0});
-        int res = -1;
-        while (!q.empty()) {
-            auto [d,x,y] = q.top(); q.pop();
+        
+        priority_queue<ti> pq; pq.push({A[0][0],0,0});
+        while (!pq.empty()) {
+            auto [dist,r,c] = pq.top(); pq.pop();
 
-            if (vis[x][y]) continue;
-            vis[x][y] = true;
+            if (r == N-1 && c == N-1) return dist-1;
 
-            if (x == N-1 && y == N-1) { res = max(d,res); continue; }
-            for (int nx,ny, i=0;i<4;++i) {
-                nx = x+dc[i];
-                ny = y+dr[i];
+            if (A[r][c] <= 0) continue;
+            A[r][c] *= -1;
+            for (int nr,nc, d=0;d<4;++d) {
+                nr = r+dr[d];
+                nc = c+dc[d];
 
-                if (min(nx,ny) >= 0 && max(nx,ny) < N)
-                    q.push({min(d,dist[nx][ny]),nx,ny});
+                if (min(nr,nc) >= 0 && max(nr,nc) < N) {
+                    pq.push({min(dist,A[nr][nc]),nr,nc});
+                }
             }
         }
 
-        return res;
+        return A[N-1][N-1] - 1;
     }
 };
