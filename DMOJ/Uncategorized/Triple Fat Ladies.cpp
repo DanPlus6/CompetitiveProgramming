@@ -14,13 +14,11 @@ int main() {
         15192, 15442, 15692, 15942, 16192, 16442, 16692, 16942, 17192, 17442, 17692, 17942, 18192, 18442,
         18692, 18942, 19192, 19442, 19692, 19942
     };
+    
     for (int i = 0; i < T; i++) {
         int k; cin >> k;
         for (int &res: bank) {if (res > k) {cout << res << "\n"; break;}}
     }
-
-    // precompute the numbers cuz lax constraints 🤤
-    // for (int i = 2; i < 20002; i++) {long long cube = pow(i,3); if (cube % 1000 == 888) {cout << i << ", ";};}
 
     return 0;
 }
