@@ -2,27 +2,33 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<long long> vl;
-#define endl '\n';
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,fma")
+
+typedef long long ll;
+#define int ll
+typedef vector<int> vi;
 #define ALL(x) x.begin(), x.end()
-#define LOOP(n) (int i = 0; i < n; i++)
-#define pb push_back
 
-
-int main() {
-    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-
-    int N,Q; cin >> N >> Q;
-    vl houses;
-    for LOOP(N) {
-        long long x,y; cin >> x >> y;
-        houses.pb(x*x + y*y);
+signed main() {
+    int N,Q; scanf("%lld %lld",&N,&Q);
+    vi H(N);
+    for (int x,y,i=0;i<N;++i) {
+        scanf("%lld %lld",&x,&y);
+        H[i] = x*x + y*y;
     }
-    sort(ALL(houses));
+    sort(ALL(H));
 
-    for LOOP(Q) {
-        long long r; cin >> r;
-        cout << distance(houses.begin(),upper_bound(ALL(houses), r*r)) << "\n";
+    for (int r,_=0;_<Q;++_) {
+        scanf("%lld",&r);
+        r *= r;
+
+        auto it = upper_bound(ALL(H),r);
+        if (it != H.end()) {
+            printf("%lld\n", (int)(it-H.begin()));
+        } else {
+            printf("%lld\n",N);
+        }
     }
 
     return 0;
