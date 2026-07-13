@@ -1,4 +1,9 @@
-// __problem_name__
+/**
+ * Author: DanPlus6 // David Fu
+ * Problem Name: problem_name
+ * Problem Code: problem_code
+ * Problem URL:  problem_url
+ */
 #include <bits/stdc++.h>
 using namespace std;
 char alpha[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
