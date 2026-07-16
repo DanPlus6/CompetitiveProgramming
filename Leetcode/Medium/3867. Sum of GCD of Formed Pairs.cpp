@@ -7,7 +7,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#pragma GCC optimize("O3,unroll-loops")
+#pragma GCC optimize("Ofast")
 #pragma GCC target("avx,avx2,fma")
 
 typedef long long ll;
@@ -18,22 +18,15 @@ class Solution {
 public:
     ll gcdSum(vi &nums) {
         int n = nums.size();
-        vi pga(n,0); {
-            vi pma(n,0); pma[0] = nums[0];
-            for (int i=1;i<n;++i)
-                pma[i] = max(pma[i-1], nums[i]);
-            for (int i=0;i<n;++i)
-                pga[i] = __gcd(nums[i],pma[i]);
+        for (int mx=0,i=0;i<n;++i) {
+            mx = max(nums[i], mx);
+            nums[i] = gcd(nums[i],mx);
         }
-        sort(ALL(pga));
+        sort(ALL(nums));
 
         ll res = 0;
-        if (n&1) {
-            for (int l=0,r=n-1;l<n/2 && r>n/2;++l,--r)
-                res += __gcd(pga[l],pga[r]);
-        } else {
-            for (int l=0,r=n-1;l<=n/2 && r>=n/2;++l,--r)
-                res += __gcd(pga[l],pga[r]);
+        for (int l=0,r=n-1; l<r; ++l,--r) {
+            res += gcd(nums[l], nums[r]);
         }
 
         return res;
