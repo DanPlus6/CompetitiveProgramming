@@ -1,5 +1,3 @@
-# I am so, so dissapointed in you David
-# Way more efficient O(N*Sqrt(N)) solution
 class Solution:
     def closestPrimes(self, left: int, right: int) -> list[int]:
         def isPrime(n):
@@ -51,41 +49,3 @@ class Solution:
         if(y>0):
             return [x,y]
         return [-1,-1]
-
-
-# 99% copied from another guy's solution
-# focus on abstraction and re-usable knowledge David
-# i'm so disappointed in you david
-# LOCK IN DAVID
-# GET BACK ON TRACK
-# THE GRIND NEVER STOPS
-"""
-class Solution:
-    def closestPrimes(self, left: int, right: int) -> list[int]:
-        if left > right:
-            return [-1,-1]
-        sieve = [True] * (right+1)
-        sieve[0] = sieve[1] = False
-
-        for i in range(2, int(right**0.5)+1):
-            if sieve[i]:
-                for j in range(i*i,right+1,i):
-                    sieve[j] = False
-        
-        primes = [i for i in range(left, right + 1) if sieve[i]]
-
-        if len(primes) < 2:
-            return [-1,-1]
-        
-        minDif = float('inf')
-        num1,num2 = -1,-1
-        for i in range(1,len(primes)):
-            diff = primes[i] - primes[i-1]
-            if diff < minDif:
-                minDif = diff
-                num1,num2 = primes[i-1],primes[i]
-                
-        return [num1,num2]
-"""
-
-
