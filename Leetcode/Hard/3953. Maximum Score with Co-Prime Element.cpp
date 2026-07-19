@@ -1,4 +1,9 @@
-// Q4. Maximum Score with Co-Prime Element
+/**
+ * Author: DanPlus6 // David Fu
+ * Problem Name: 3953. Maximum Score with Co-Prime Element
+ * Problem Code: maximum-score-with-co-prime-element
+ * Problem URL:  https://leetcode.com/problems/maximum-score-with-co-prime-element/description
+ */
 #include <bits/stdc++.h>
 using namespace std;
 
