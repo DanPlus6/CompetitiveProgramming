@@ -1,6 +1,6 @@
 /**
  * Author: DanPlus6 // David Fu
- * Problem Name: Q3. Minimum Adjacent Swaps to Partition Array
+ * Problem Name: 3994. Minimum Adjacent Swaps to Partition Array
  * Problem Code: minimum-adjacent-swaps-to-partition-array
  * Problem URL:  https://leetcode.com/problems/minimum-adjacent-swaps-to-partition-array/description
  */
