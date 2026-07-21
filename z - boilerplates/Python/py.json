@@ -1,0 +1,30 @@
+{
+    "Standard CP Boilerplate": {
+        "prefix": "cpoj",
+        "description": "Gives you many macros you might need to write a competitive programming solution for standard online judges like DMOJ and Codeforces",
+        "body": [
+            "# Author: DanPlus6 // David Fu",
+            "# Problem Name: ${1:problem_name}",
+            "# Problem Code: ${2:problem_code}",
+            "# Problem URL:  ${3:problem_url}",
+            "from sys import stdin",
+            "input = stdin.readline",
+            "",
+            "$4",
+            ""
+        ]
+    },
+    "Technical Online Judge CP Boilerplate": {
+        "prefix": "tcoj",
+        "description": "Gives you many macros you might need to write a competitive programming solution for technical online judges like Leetcode and Hackerrank",
+        "body": [
+            "# Author: DanPlus6 // David Fu",
+            "# Problem Name: ${1:problem_name}",
+            "# Problem Code: ${2:problem_code}",
+            "# Problem URL:  ${3:problem_url}",
+            "",
+            "$4",
+            ""
+        ]
+    }
+}
