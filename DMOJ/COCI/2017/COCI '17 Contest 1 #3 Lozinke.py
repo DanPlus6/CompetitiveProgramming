@@ -2,19 +2,40 @@
 # Problem Name: COCI '17 Contest 1 #3 Lozinke
 # Problem Code: coci17c1p3
 # Problem URL:  https://dmoj.ca/problem/coci17c1p3
-from collections import defaultdict
 from sys import stdin
 input = stdin.readline
 
-db = defaultdict(int)
+class Node:
+    def __init__(self):
+        self.next = {}
+        self.end = 0
+    
+root = Node()
+def insert(s):
+    head = root
+    for c in s:
+        head = head.next.setdefault(c,Node())
+    head.end += 1
 
+pwd = []
 for _ in range(int(input())):
-    db[input().strip()] += 1
+    pwd.append(input().strip())
+    insert(pwd[-1])
 
 res = 0
-for ki,vi in db.items():
-    if vi>1: res += vi*(vi-1)
-    for kj,vj in db.items():
-        if ki == kj: continue
-        elif ki in kj: res += vi*vj
+for s in pwd:
+    seen = set()
+    for i in range(len(s)):
+        cur = root
+        sub = ""
+        for j in range(i,len(s)):
+            if (c := s[j]) not in cur.next: break
+
+            cur = cur.next[c]
+            sub += c
+
+            if cur.end and sub not in seen:
+                seen.add(sub)
+                res += cur.end
+    res -= 1
 print(res)
