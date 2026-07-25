@@ -32,4 +32,4 @@ Most solutions will be written either in Python 2.7/3.11 or C++20.
 
 *The following codes and solutions have been tested on their respective graders/judging sites*
 
-> Disclaimer: Solutions in this repository are not all from in-contest, some may be from upsolving or practice problems (especially for the major online judges)
+> Disclaimer: Solutions in this repository are not all from live contest, some may be from upsolving or practice problems (especially for the major online judges)
