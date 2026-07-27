@@ -5,12 +5,12 @@
         "body": [
             "# Author: DanPlus6 // David Fu",
             "# Problem Name: ${0:problem_name}",
-            "# Problem URL:  ${0:problem_url}",
-            "# Problem Code: ${0:problem_code}",
+            "# Problem URL:  ${1:problem_url}",
+            "# Problem Code: ${2:problem_code}",
             "from sys import stdin",
             "input = stdin.readline",
             "",
-            "$0",
+            "$3",
             ""
         ]
     },
@@ -20,10 +20,10 @@
         "body": [
             "# Author: DanPlus6 // David Fu",
             "# Problem Name: ${0:problem_name}",
-            "# Problem URL:  ${0:problem_url}",
-            "# Problem Code: ${0:problem_code}",
+            "# Problem URL:  ${1:problem_url}",
+            "# Problem Code: ${2:problem_code}",
             "",
-            "$0",
+            "$3",
             ""
         ]
     }
