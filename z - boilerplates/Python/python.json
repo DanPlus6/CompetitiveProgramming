@@ -4,13 +4,13 @@
         "description": "Gives you many macros you might need to write a competitive programming solution for standard online judges like DMOJ and Codeforces",
         "body": [
             "# Author: DanPlus6 // David Fu",
-            "# Problem Name: ${1:problem_name}",
-            "# Problem Code: ${2:problem_code}",
-            "# Problem URL:  ${3:problem_url}",
+            "# Problem Name: ${0:problem_name}",
+            "# Problem URL:  ${0:problem_url}",
+            "# Problem Code: ${0:problem_code}",
             "from sys import stdin",
             "input = stdin.readline",
             "",
-            "$4",
+            "$0",
             ""
         ]
     },
@@ -19,11 +19,11 @@
         "description": "Gives you many macros you might need to write a competitive programming solution for technical online judges like Leetcode and Hackerrank",
         "body": [
             "# Author: DanPlus6 // David Fu",
-            "# Problem Name: ${1:problem_name}",
-            "# Problem Code: ${2:problem_code}",
-            "# Problem URL:  ${3:problem_url}",
+            "# Problem Name: ${0:problem_name}",
+            "# Problem URL:  ${0:problem_url}",
+            "# Problem Code: ${0:problem_code}",
             "",
-            "$4",
+            "$0",
             ""
         ]
     }
