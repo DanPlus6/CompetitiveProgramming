@@ -11,26 +11,21 @@ using namespace std;
 #pragma GCC target("avx,avx2,fma")
 
 typedef vector<int> vi;
-#define ALL(x) x.begin(), x.end()
 #define LOOP(n) for (int _ = 0; _ < n; _++)
 
 class Solution {
 public:
-    string smallestPalindrome(string &s) {
-        vi freq(26,0);
-        for (char &c: s) ++freq[c-'a'];
+    string smallestPalindrome(string s) {
+        int N = s.length(), freq[26]{};
+        for (int i=0;i<(N>>1);++i) ++freq[s[i]-'a'];
 
-        char mid; string res = "";
-        for (int i=0;i<26;++i) {
-            printf("%c\n",i+'a');
-            if (freq[i]&1) mid = i+'a';
-            LOOP(freq[i]/2) res += i+'a';
+        for (int i=0,c=0; c<26; ++c) {
+            for (;freq[c]--; ++i) {
+                s[i] = c+'a';
+                s[N-i-1] = c+'a';
+            }
         }
 
-        sort(ALL(res));
-        string mirror(res.rbegin(),res.rend());
-        if (s.length()&1) res += mid;
-        res += mirror;
-        return res;
+        return s;
     }
 };
