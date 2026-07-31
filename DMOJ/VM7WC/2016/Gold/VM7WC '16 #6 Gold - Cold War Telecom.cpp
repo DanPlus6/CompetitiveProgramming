@@ -33,33 +33,52 @@ typedef vector<ti> vti;
 typedef vector<pl> vll;
 typedef vector<tl> vtl;
 typedef vector<bool> vb;
-#define endl '\n'
 #define FILL(a, b) memset(a, b, sizeof(a))
-#define ALL(x) x.begin(), x.end()
-#define LOOP(n) for (int _ = 0; _ < n; _++)
 #define pb push_back
 
 constexpr int MM = 1e5+5;
-constexpr int INF = 0x3F3F3F3F;
-constexpr ll INFL = 0x3F3F3F3F3F3F3F3FLL;
-constexpr int MOD = 1e9 + 7;
 
-int N,M; map<int,vi> adj;
-int dfn[MM], low[MM]; bool vis[MM];
-int total = 0; vi res;
+int N,M; 
+vvi adj;
+bool vis[MM], inStk[MM];
+int idx, dfn[MM], low[MM], res;
+void tarjan(int u) {
+    vis[u] = true;
+    dfn[u] = low[u] = idx++;
+    stack<int> stk; stk.push(u);
 
+    for (int &v: adj[u]) {
+        if (!vis[v]) {
+            tarjan(v);
+            low[u] = min(low[u], low[v]);
+        } else if (inStk[v]) {
+            low[u] = min(low[u], dfn[v]);
+        }
+    }
+
+    if (dfn[u] == low[u]) {
+        while (!stk.empty()) {
+            int v = stk.top(); stk.pop();
+            if (u == v) break;
+            ++res;
+        }
+    }
+}
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
-    
-    cin >> N >> M;
+    scanf("%d %d",&N,&M);
+    adj.reserve(N);
     for (int x,y; M--;) {
-        cin >> x >> y;
+        scanf("%d %d",&x,&y);
         adj[x].pb(y);
         adj[y].pb(x);
     }
 
-    cout << total << endl;
+    for (int i=0;i<N;++i) {
+        if (!vis[i]) tarjan(i);
+    }
+
+    printf("%d\n",res);
 
     return 0;
 }
