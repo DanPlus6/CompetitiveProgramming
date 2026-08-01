@@ -5,9 +5,9 @@
         "body": [
             "/**",
             " * Author: DanPlus6 // David Fu",
-            " * Problem Name: ${0:problem_name}",
-            " * Problem URL:  ${1:problem_url}",
-            " * Problem Code: ${2:problem_code}",
+            " * Problem Name: ${1:problem_name}",
+            " * Problem URL:  ${2:problem_url}",
+            " * Problem Code: ${3:problem_code}",
             " */",
             "#include <bits/stdc++.h>",
             "using namespace std;",
@@ -52,7 +52,7 @@
             "int main() {",
             "    ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);",
             "",
-            "    $3",
+            "    $4",
             "",
             "    return 0;",
             "}"
@@ -64,9 +64,9 @@
         "body": [
             "/**",
             " * Author: DanPlus6 // David Fu",
-            " * Problem Name: ${0:problem_name}",
-            " * Problem URL:  ${1:problem_url}",
-            " * Problem Code: ${2:problem_code}",
+            " * Problem Name: ${1:problem_name}",
+            " * Problem URL:  ${2:problem_url}",
+            " * Problem Code: ${3:problem_code}",
             " */",
             "#include <bits/stdc++.h>",
             "using namespace std;",
@@ -101,7 +101,7 @@
             "#define LOOP(n) for (int _ = 0; _ < n; _++)",
             "#define pb push_back",
             "",
-            "$3",
+            "$4",
             ""
         ]
     },
