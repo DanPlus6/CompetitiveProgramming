@@ -36,5 +36,12 @@ typedef vector<bool> vb;
 #define ALL(x) x.begin(), x.end()
 #define LOOP(n) for (int _ = 0; _ < n; _++)
 #define pb push_back
+#define fi first
+#define se second
+
+constexpr int MM = 1e5+5;
+constexpr int INF = 0x3F3F3F3F;
+constexpr ll INFL = 0x3F3F3F3F3F3F3F3FLL;
+constexpr int MOD = 1e9 + 7;
 
 // solution here

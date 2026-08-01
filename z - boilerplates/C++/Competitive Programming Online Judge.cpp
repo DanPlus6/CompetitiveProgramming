@@ -33,11 +33,12 @@ typedef vector<ti> vti;
 typedef vector<pl> vll;
 typedef vector<tl> vtl;
 typedef vector<bool> vb;
-#define endl '\n'
 #define FILL(a, b) memset(a, b, sizeof(a))
 #define ALL(x) x.begin(), x.end()
 #define LOOP(n) for (int _ = 0; _ < n; _++)
 #define pb push_back
+#define fi first
+#define se second
 
 constexpr int MM = 1e5+5;
 constexpr int INF = 0x3F3F3F3F;
