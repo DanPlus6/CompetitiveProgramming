@@ -23,58 +23,5 @@ int main() {
         cout << psa[c][j] - psa[c][i-1] << "\n";
     }
 
-
-
-    // :spongebob_sob:
-    // void buildPsa(map<char,map<int,int>> psa) {
-    //     map<char,int> lastVal;
-    //     string ln; getline(cin,ln);
-    //     for (int si = 0; si < ln.size(); si++) {
-    //         char c = ln[si];
-    //         if (c == ' ') continue;
-    //         if (c == '\n') {break;}
-
-    //         if (!psa.count(c)) {psa[c][si] = 1; lastVal[c] = si;}
-    //         else {psa[c][si] = psa[c][lastVal[c]] + 1; lastVal[c] = si;}
-    //     }
-    // }
-
-    // map<char,map<int,int>> psa;
-    // map<char,int> lastVal;
-    // string ln; getline(cin,ln);
-    // for (int si = 0; si < ln.size(); si++) {
-    //     char c = ln[si];
-    //     if (c == ' ') continue;
-    //     if (c == '\n') {lastVal.clear(); break;}
-
-    //     if (!psa.count(c)) {psa[c][si] = 1; lastVal[c] = 1;}
-    //     else {psa[c][si] = lastVal[c] + 1; lastVal[c]++;}
-    // }
-
-
-    // int Q; cin >> Q;
-    // int i, j; char c;
-    // int left = 0, right;
-    // for (int q = 0; q < Q; q++) {
-    //     cin >> i >> j >> c;
-    //     if (!psa.count(c)) {cout << 0 << "\n"; continue;}
-    //     i--; j--;
-    //     if (i == j) {cout << ((ln[i] == c) ? 1 : 0) << "\n"; continue;}        
-    //     i--;
-
-    //     reverse_iterator it = psa[c].rbegin();
-    //     for (;it != psa[c].rend(); it++) {
-    //         if (it->first <= j) {right = it->second; break;}            
-    //     }
-
-    //     if (i) {
-    //     for (;it != psa[c].rend(); it++) {
-    //         if (it->first <= i) {left = it->second; break;}            
-    //     }
-    //     }
-
-    //     cout << right - left << "\n";
-    // }
-
     return 0;
 }
