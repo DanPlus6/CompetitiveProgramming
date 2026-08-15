@@ -8,14 +8,6 @@ for i in range(N):
         psm[i] = m + psm[i-1]
     except KeyError:
         psm[i] = m
-# MLE
-# query = [list(map(int,stdin.readline().split())) for i in range(int(stdin.readline()))]
-# for i in query:
-#     a,b = i[0],i[1]
-#     try:
-#         print(psm[b]-psm[a-1])
-#     except KeyError:
-#         print(psm[b])
 
 for i in range(int(stdin.readline())):
     a,b = map(int,stdin.readline().split())
