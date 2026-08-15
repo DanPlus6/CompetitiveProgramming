@@ -33,18 +33,5 @@ int main() {
     }
     cout << res << "\n";
 
-
-
-    // naieve O(I*J)
-    // vector<int> stations(I,0);
-    // for (int j = 0; j < J; j++) {
-    //     int xi,xf,k; cin >> xi >> xf >> k;
-    //     for (int i = xi; i <= xf; i++) {stations[i]+=k;}
-    // }
-
-    // int res = 0;
-    // for (int &i: stations) {if (i < N) {res++;}}
-    // cout << res << "\n";
-    
     return 0;
 }
