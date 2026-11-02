@@ -1,23 +1,19 @@
 # CCC '24 S2 - Heavy-Light Composition
 T,N = map(int,input().split())
-letters = [input() for i in range(T)]
 
 for i in range(T):
-    line = letters[i]
-    seen = []
-    heavy = []
+    line = input()
+    seen = set()
+    heavy = set()
 
     for j in range(N):
         char = line[j]
         if char not in seen:
-            seen.append(char)
+            seen.add(char)
         else:
-            heavy.append(char)
-    
-    if line[0] in heavy:
-        lastSeen = True
-    else:
-        lastSeen = False
+            heavy.add(char)
+
+    lastSeen = True if line[0] in heavy else False
 
     for j in range(1,N):
         if line[j] in heavy:
