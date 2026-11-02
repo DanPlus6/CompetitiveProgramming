@@ -65,6 +65,8 @@ void tarjan(int u) {
     }
 }
 
+// TODO: make ts work 😭🥀🥀
+
 int main() {
     scanf("%d %d",&N,&M);
     adj.reserve(N);
